@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_500">#673AB7</color>
+    <color name="purple">#8692f7</color>
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#2661FA</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="colorPrimary">#FF4081</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+    <color name="button_background_color">#FF9800</color>
+    <color name="neutral_background_color">#F0F0F0</color>
+
+        <color name="background_color">#FFFFFF</color> <!-- Replace with your desired color code -->
+
+
+</resources>

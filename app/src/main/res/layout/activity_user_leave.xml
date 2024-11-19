@@ -1,0 +1,71 @@
+<!-- activity_faculty_leave_application.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextStartDate"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupLeaveType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/editTextEndDate">
+
+        <RadioButton
+            android:id="@+id/radioButtonSick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sick Leave"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonVacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacation"/>
+
+        <!-- Add more leave types as needed -->
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reason for Leave"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/radioGroupLeaveType"/>
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextReason"/>
+
+</RelativeLayout>

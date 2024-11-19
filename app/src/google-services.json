@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "412002121272",
+    "project_id": "faculty-tracker-7d374",
+    "storage_bucket": "faculty-tracker-7d374.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412002121272:android:890145abbaec0d0e5d58cd",
+        "android_client_info": {
+          "package_name": "com.example.facultytracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLgLDo8FGnXiVOvtCjCLhjhW9uy6AK3Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

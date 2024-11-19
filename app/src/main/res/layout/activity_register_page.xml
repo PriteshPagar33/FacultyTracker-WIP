@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/loginHeader"
+        android:text="Register"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputFirstName"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            style="@style/modifiedEditText"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLastName"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            style="@style/modifiedEditText"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputUsername"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            style="@style/modifiedEditText"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/modifiedEditText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Confirm Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputConfirmPassword"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            style="@style/modifiedEditText"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_below="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Department"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Designation -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputDesignation"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextDesignation"
+            style="@style/modifiedEditText"
+            android:hint="Designation"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Mobile Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputMobile"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            style="@style/modifiedEditText"
+            android:hint="Mobile Number"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email Address -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/modifiedEditText"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="20dp"
+            android:text="Register" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

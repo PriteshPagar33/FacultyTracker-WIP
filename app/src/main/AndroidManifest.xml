@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FacultyTracker"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin_Map"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Leave_Management"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Faculty_Info"
+            android:exported="false"
+            android:label="@string/title_activity_admin_faculty_info"
+            android:theme="@style/Theme.FacultyTracker" />
+        <activity
+            android:name=".About_Us"
+            android:exported="false" />
+        <activity
+            android:name=".User_Help"
+            android:exported="false" />
+        <activity
+            android:name=".User_Settings"
+            android:exported="false" />
+        <activity
+            android:name=".User_College"
+            android:exported="false" />
+        <activity
+            android:name=".User_Leave"
+            android:exported="false" />
+        <activity
+            android:name=".User_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard_admin"
+            android:exported="false" />
+        <activity
+            android:name=".User_Home"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_login"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="false" />
+
+        <service
+            android:name=".BackgroundService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Register_page"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+
+    </application>
+
+</manifest>

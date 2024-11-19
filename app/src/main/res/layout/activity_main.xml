@@ -1,0 +1,96 @@
+<!-- activity_main.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neutral_background_color"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/gpn_logo_clg"
+    android:layout_alignParentTop="true"
+    android:scaleType="fitCenter"
+    android:layout_marginBottom="8dp"  />
+
+
+    <TextView
+        android:id="@+id/textAboveRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="-2dp"
+        android:gravity="center"
+        android:text="Welcome to GP Nashik"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textBelowAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAboveRegister"
+        android:layout_marginTop="99dp"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:text="New User?"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAboveRegister"
+        android:layout_marginTop="121dp"
+
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/textBelowRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:text="Already have an account?"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="55dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textBelowLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:text="Admin Login Options"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonAdminLogin"
+        android:layout_below="@+id/buttonLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Admin Login"
+    android:layout_marginTop="120dp"/>
+
+</RelativeLayout>
